@@ -9,7 +9,8 @@ defmodule Covid.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      CovidWeb.Endpoint
+      CovidWeb.Endpoint,
+      Covid.CovidDataStore
       # Starts a worker by calling: Covid.Worker.start_link(arg)
       # {Covid.Worker, arg},
     ]

@@ -16,9 +16,7 @@ defmodule Covid.CovidDataStore do
   end
 
   def get do
-    # TODO: Store it in state
     GenServer.call(__MODULE__, :get)
-    Covid.CovidTrackingData.fetch()
   end
 
   @impl GenServer
