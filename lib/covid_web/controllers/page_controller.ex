@@ -7,7 +7,18 @@ defmodule CovidWeb.PageController do
 
     positives_svg = positives_svg(dataset)
     tests_svg = tests_svg(dataset)
-    render(conn, "index.html", positives_svg: positives_svg, tests_svg: tests_svg)
+
+    render(conn, "index.html",
+      positives_svg: positives_svg,
+      tests_svg: tests_svg,
+      last_fetched_date: last_fetched_date(data)
+    )
+  end
+
+  def last_fetched_date(data) do
+    date = List.first(data).date
+    {{year, month, day}, _} = NaiveDateTime.to_erl(date)
+    "#{month}/#{day}/#{year}"
   end
 
   def positives_svg(dataset) do
@@ -20,7 +31,7 @@ defmodule CovidWeb.PageController do
       Contex.Plot.new(500, 300, plot_content)
       |> Contex.Plot.axis_labels("", "Tests")
       |> Contex.Plot.titles("Positive COVID Tests", nil)
-      |> Contex.Plot.plot_options(%{legend_setting: :legend_right})
+      |> Contex.Plot.plot_options(%{legend_setting: :legend_right, left_margin: 60})
 
     Contex.Plot.to_svg(plot)
   end
@@ -35,7 +46,7 @@ defmodule CovidWeb.PageController do
       Contex.Plot.new(500, 300, plot_content)
       |> Contex.Plot.axis_labels("", "Tests")
       |> Contex.Plot.titles("Total COVID Tests", nil)
-      |> Contex.Plot.plot_options(%{legend_setting: :legend_right})
+      |> Contex.Plot.plot_options(%{legend_setting: :legend_right, left_margin: 60})
 
     Contex.Plot.to_svg(plot)
   end

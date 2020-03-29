@@ -17,6 +17,9 @@
       <li>
         Data is sourced from <a href="https://covidtracking.com/" alt="COVID Tracking Project">The COVID Tracking Project.</a>
       </li>
+      <li>
+        Data updated on <%= @last_fetched_date %>
+      </li>
     </ul>
   </article>
 </section>
