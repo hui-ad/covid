@@ -33,7 +33,9 @@ defmodule Covid.MixProject do
   defp deps do
     [
       # {:contex, github: "mindok/contex"},
-      {:contex, path: "deps/contex"},
+      {:contex, github: "axelson/contex", branch: "spread-labels"},
+      # {:contex, path: "deps/contex"},
+      # {:contex, path: "/home/jason/dev/forks/contex"},
       {:mojito, "~> 0.6.1"},
       {:phoenix, "~> 1.4.16"},
       {:phoenix_pubsub, "~> 1.1"},

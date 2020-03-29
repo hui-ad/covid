@@ -1,8 +1,12 @@
 <section class="row">
   <article class="column">
+      <%= @positives_svg %>
+  </article>
+</section>
 
-      <%= @svg %>
-
+<section class="row">
+  <article class="column">
+      <%= @tests_svg %>
   </article>
 </section>
 

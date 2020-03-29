@@ -53,13 +53,13 @@ defmodule Covid.CovidTrackingData do
         hash: row["hash"],
         hospitalized: row["hospitalized"],
         hospitalized_increase: row["hospitalizedIncrease"],
-        negative: row["negative"],
+        negative: row["negative"] || 0,
         negative_increase: row["negativeIncrease"],
         pending: row["pending"],
         positive: row["positive"],
-        positive_increase: row["positiveIncrease"],
+        positive_increase: row["positiveIncrease"] || 0,
         state: row["state"],
-        total_test_results: row["totalTestResults"],
+        total_test_results: row["totalTestResults"] || 0,
         total_test_results_increase: row["totalTestResultsIncrease"],
         raw: row
       }

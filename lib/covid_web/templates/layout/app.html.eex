@@ -11,7 +11,7 @@
   <body>
     <header>
       <section class="container">
-        <div>
+        <div class="heading">
           <h1>
             <a href="/" alt="home">
               Hawaiʻi COVID Tracker

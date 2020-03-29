@@ -74,9 +74,13 @@ header section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
+}
+header section .heading {
+  width: 50%;
 }
 
-@media (min-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 40.0rem) { /* Small devices (landscape phones, 576px and up) */
   header section {
     flex-direction: row;
   }
