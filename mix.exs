@@ -32,6 +32,7 @@ defmodule Covid.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:contex, github: "mindok/contex"},
       {:phoenix, "~> 1.4.16"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_html, "~> 2.11"},
