@@ -35,6 +35,8 @@ https://docs.google.com/spreadsheets/d/1xTAWyUFlNGPgXPg_lBdsz_lzO0MHga_ppE-OjvvT
 Has spotty data collected locally for 3/21-3/28
 
 ### New York Times (cases and deaths only)
+Data used in article https://www.nytimes.com/interactive/2020/03/26/us/coronavirus-testing-states.html
+
 Data on cumulative coronavirus cases and deaths can be found in two files for states and counties.
 - https://github.com/nytimes/covid-19-data/blob/master/us-states.csv
 - https://github.com/nytimes/covid-19-data/blob/master/us-counties.csv
