@@ -33,6 +33,7 @@ defmodule Covid.MixProject do
   defp deps do
     [
       {:contex, github: "mindok/contex"},
+      {:mojito, "~> 0.6.1"},
       {:phoenix, "~> 1.4.16"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_html, "~> 2.11"},
