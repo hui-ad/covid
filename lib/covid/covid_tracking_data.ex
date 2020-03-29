@@ -91,11 +91,23 @@ defmodule Covid.CovidTrackingData do
     end
   end
 
-  @spec fetch :: [DailyResult.t()]
+  @spec fetch :: {:ok, [DailyResult.t()]}
   def fetch do
-    with {:ok, response} <- Mojito.request(:get, api_url()),
+    with {:ok, response} <- fetch_raw_data(),
          {:ok, json} <- Jason.decode(response.body) do
       {:ok, Enum.map(json, &DailyResult.parse/1)}
+    end
+  end
+
+  def fetch_raw_data do
+    case Mojito.request(:get, api_url()) do
+      {:ok, response} ->
+        {:ok, response}
+
+      _ ->
+        # Fall back to hard-coded data
+        path = Path.join(:code.priv_dir(:covid), "2020-03-28_covid_tracker_daily.json")
+        File.read(path)
     end
   end
 
