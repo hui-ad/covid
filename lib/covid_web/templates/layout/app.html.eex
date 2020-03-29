@@ -11,9 +11,16 @@
   <body>
     <header>
       <section class="container">
-        <a href="/" alt="home">
-          Hawaiʻi COVID Tracker
-        </a>
+        <div>
+          <h1>
+            <a href="/" alt="home">
+              Hawaiʻi COVID Tracker
+            </a>
+          </h1>
+        </div>
+        <div class="sub-heading">
+          <h2>At-a-glance data for novel coronavirus, SARS-CoV-2, tests performed in Hawaiʻi</h2>
+        </div>
       </section>
     </header>
     <main role="main" class="container">

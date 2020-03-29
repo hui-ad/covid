@@ -1,6 +1,9 @@
-<section class="phx-hero">
-  <h1>Hawaiʻi COVID Tracker</h1>
-  <p>At-a-glance data for novel coronavirus, SARS-CoV-2, tests performed in Hawaiʻi</p>
+<section class="row">
+  <article class="column">
+
+      <%= @svg %>
+
+  </article>
 </section>
 
 <section class="row">
