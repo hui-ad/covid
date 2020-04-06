@@ -41,11 +41,13 @@ Has spotty data collected locally for 3/21-3/28
   * https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/
 
 Approach:
-* Use wget (via System.cmd at first) to download the pages we're interested in
-* Commit those pages to git automatically and push up to github periodically
-  * Start with every hour
-* Use meeseeks to parse the HTML and store the results in Postgres via Ecto
-* Use Phoenix to view the data
+* [x] Use wget (via System.cmd at first) to download the pages we're interested in
+* [x] Commit those pages to git automatically and push up to github periodically
+  * [ ] Start with every hour
+* [ ] Use meeseeks to parse the HTML and store the results in Postgres via Ecto
+  * [x] home page
+  * [ ] details page
+* [ ] Use Phoenix to view the data
 
 ### Official Hawaii Website
 

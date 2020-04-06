@@ -11,7 +11,8 @@ defmodule Covid.Application do
     children = [
       # Start the endpoint when the application starts
       CovidWeb.Endpoint,
-      Covid.CovidDataStore
+      Covid.CovidDataStore,
+      Covid.DohTracker.SiteCrawler
       # Starts a worker by calling: Covid.Worker.start_link(arg)
       # {Covid.Worker, arg},
     ]

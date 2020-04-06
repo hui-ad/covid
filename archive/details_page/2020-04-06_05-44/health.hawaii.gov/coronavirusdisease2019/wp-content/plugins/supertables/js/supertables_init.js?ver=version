@@ -1,3 +1,0 @@
-jQuery(function(){jQuery('.supertable').each(function(){var get_paginate=jQuery(this).attr('data-paginate');if(get_paginate>0){paginate=parseInt(get_paginate);}
-else{paginate=10;}
-jQuery(this).supertable({'lengthIconClasses':'icon-list-alt1 icon-white','columnIconClasses':'icon-th-list1 icon-white','buttonClasses':'btn-inverse','breakPoints':{tablet:768,mobile:480,},'dataTableSettings':{'iDisplayLength':paginate,'aaSorting':[],},});});});
