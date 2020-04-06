@@ -4,6 +4,7 @@ defmodule Covid.Application do
   @moduledoc false
 
   use Application
+  use Boundary, deps: [Covid, CovidWeb]
 
   def start(_type, _args) do
     # List all child processes to be supervised

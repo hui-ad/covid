@@ -32,11 +32,13 @@ defmodule Covid.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:boundary, "~> 0.4.4"},
       # {:contex, github: "mindok/contex"},
       {:contex, github: "axelson/contex", branch: "spread-labels"},
       # {:contex, path: "deps/contex"},
       # {:contex, path: "/home/jason/dev/forks/contex"},
       {:mojito, "~> 0.6.1"},
+      {:meeseeks, "~> 0.15.0"},
       {:phoenix, "~> 1.4.16"},
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_html, "~> 2.11"},

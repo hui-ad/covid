@@ -17,6 +17,8 @@ defmodule CovidWeb do
   and import those modules here.
   """
 
+  use Boundary, deps: [Covid], exports: [Endpoint]
+
   def controller do
     quote do
       use Phoenix.Controller, namespace: CovidWeb
