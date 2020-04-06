@@ -34,6 +34,19 @@ https://bit.ly/hawaiicovid19counts
 
 Has spotty data collected locally for 3/21-3/28
 
+## Tracking DOH Website
+* Main website:
+  * https://health.hawaii.gov/coronavirusdisease2019/
+* Detailed page:
+  * https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/
+
+Approach:
+* Use wget (via System.cmd at first) to download the pages we're interested in
+* Commit those pages to git automatically and push up to github periodically
+  * Start with every hour
+* Use meeseeks to parse the HTML and store the results in Postgres via Ecto
+* Use Phoenix to view the data
+
 ### Official Hawaii Website
 
 * https://health.hawaii.gov/coronavirusdisease2019/
