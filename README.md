@@ -30,9 +30,14 @@ totalTestResultsIncrease	14
 ```
 
 ### Testing data collected from Ryan Ozawa:
-https://docs.google.com/spreadsheets/d/1xTAWyUFlNGPgXPg_lBdsz_lzO0MHga_ppE-OjvvTcnA/edit#gid=954987447
+https://bit.ly/hawaiicovid19counts
 
 Has spotty data collected locally for 3/21-3/28
+
+### Official Hawaii Website
+
+* https://health.hawaii.gov/coronavirusdisease2019/
+* https://health.hawaii.gov/coronavirusdisease2019/what-you-should-know/current-situation-in-hawaii/
 
 ### New York Times (cases and deaths only)
 Data used in article https://www.nytimes.com/interactive/2020/03/26/us/coronavirus-testing-states.html
