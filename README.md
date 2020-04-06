@@ -47,6 +47,13 @@ Data on cumulative coronavirus cases and deaths can be found in two files for st
 - https://github.com/nytimes/covid-19-data/blob/master/us-counties.csv
 
 
+# Test
+
+Oregon private vs public testing
+11601/2225 = 5.213932584269663
+
+Hawaii private vs public testing
+8273/402=20.57
 
 # Setup
 
