@@ -32,9 +32,12 @@ defmodule Covid.DohTracker.SiteCrawler do
 
   @impl GenServer
   def init(_opts) do
-    Process.send(self(), :crawl, [])
+    if should_crawl?() do
+      Process.send(self(), :crawl, [])
 
-    schedule_crawl(milliseconds_to_next_fetch())
+      schedule_crawl(milliseconds_to_next_fetch())
+    end
+
     {:ok, nil}
   end
 
@@ -61,4 +64,6 @@ defmodule Covid.DohTracker.SiteCrawler do
   def schedule_crawl(milliseconds \\ 1_000 * 60 * 60) do
     Process.send_after(self(), :crawl, milliseconds)
   end
+
+  defp should_crawl?, do: System.get_env("RUN_SITE_CRAWLER", "false") == "true"
 end

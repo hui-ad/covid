@@ -1,5 +1,7 @@
 # Covid
 
+Note: Only crawls the DOH website if `RUN_SITE_CRAWLER` is set.
+
 ## Data
 
 ### Covid Tracking
